@@ -5,7 +5,7 @@ description: Score how a software developer or an engineering manager looks to a
 
 # digital-footprint-multiplier
 
-Version 1.0 · 2026-11-12. By Marian Kamenistak, engineering-leadership mentor.
+Version 1.1 · 2026-11-12. By Marian Kamenistak, engineering-leadership mentor.
 
 Where it comes from: the criteria and their weights are distilled from 3,662 1:1 leadership sessions with 317 engineering leaders since 2019, where "I sent out hundreds of CVs and nothing came back" is a story that returns every week. The profiles that get the call share the same visible proof; the ones that do not are usually missing the proof, not the skill.
 
@@ -15,7 +15,25 @@ Before a person reads your CV, something else reads you: a recruiter with ninety
 - **0.4** is a profile the internet has not met yet. **1.7** is a profile that brings the roles to you.
 - The number is about **visibility of proof**, not about how good the person is at the job. Say so in every report.
 
-The scoring model (two role profiles, criteria, weights, level anchors, plays) is in `model.json` beside this file. The arithmetic is in `scripts/score.py`. Read `model.json` before scoring; do not rephrase the anchors from memory.
+## The nine steps
+
+The multiplier gets a name, so the person remembers where they stand and what the next step is called.
+
+| Step | Multiplier | Name | Share of profiles |
+|---|---|---|---|
+| 1 | 0.40 to 0.47 | Hidden gem | 4% |
+| 2 | 0.48 to 0.62 | First sparks | 7% |
+| 3 | 0.63 to 0.77 | Warming up | 12% |
+| 4 | 0.78 to 0.92 | Nearly there | 17% |
+| 5 | 0.93 to 1.08 | On the radar | 20% |
+| 6 | 1.09 to 1.26 | Worth a second look | 17% |
+| 7 | 1.27 to 1.43 | Hard to ignore | 12% |
+| 8 | 1.44 to 1.61 | In demand | 7% |
+| 9 | 1.62 to 1.70 | Magnet | 4% |
+
+The steps are cut from a bell curve, the way a stanine scale is: step 5 sits on 1.0, each step is half a standard deviation wide (one standard deviation = half a level), and most profiles land in the middle. The shares are the design of the scale, not a measurement; say "by design" when you quote one, and never tell a person they are "in the top 7%" as a fact.
+
+The scoring model (two role profiles, criteria, weights, level anchors, plays, the nine steps) is in `model.json` beside this file. The arithmetic is in `scripts/score.py`. Read `model.json` before scoring; do not rephrase the anchors from memory.
 
 ## Who you may run it on
 
@@ -73,7 +91,7 @@ python3 scripts/score.py developer /path/to/scores.json     # or engineering_man
 python3 scripts/score.py --selftest
 ```
 
-The script refuses a score without evidence. It returns the multiplier, its band, what one level up is worth for each criterion, and the projection for the plan.
+The script refuses a score without evidence. It returns the multiplier, its named step, what one level up is worth for each criterion, and the projection for the plan.
 
 ### 4. Build the plan
 
@@ -91,9 +109,9 @@ Put the planned levels into `plan` in the JSON so the script prints the projecti
 ALWAYS use this structure:
 
 ```markdown
-# <First name>, your digital footprint: <M.MM>x · <band name>
+# <First name>, your digital footprint: <M.MM>x · <step name> (step <n> of 9)
 
-<band line>. One sentence on what the number means: visibility of proof, 1.0 = a typical 2026 <role> profile.
+<step line>. One sentence on what the number means: visibility of proof, 1.0 = a typical 2026 <role> profile.
 One line: which profile you scored against and why, and the aim if one was given.
 
 ## What already works
@@ -127,7 +145,7 @@ The reader should finish the report wanting to open LinkedIn, not close the lapt
 - Start with what works. Everyone has three things.
 - A gap is "not visible yet", and it always comes with the next action and how long it takes. Never "weak", "poor", "lacking", "fails".
 - Speak to the person: "you", plain words, short sentences. Many readers are not native English speakers.
-- Be specific and a little playful: name the band, show the gain ("this one is worth +0.08"), celebrate the cheap wins.
+- Be specific and a little playful: name the step and the next one up, show the gain ("this one is worth +0.08"), celebrate the cheap wins.
 - Stay honest. Do not raise a level to be kind, and do not promise a salary: the multiplier is not pay.
 - No hype words (unlock, leverage, empower, game-changer), no absolutes about people (never, always, nobody).
 
@@ -146,4 +164,4 @@ Founders, fractional leaders, consultants and mentors use the manager profile, r
 
 ## Calibration
 
-Version 1.0 defines the level "typical for 2026" by written anchors, not by a dataset of scored profiles. Keep each run's scores JSON. After about 30 real runs, compare the median level per criterion with 1 and rewrite the anchors that sit far from it; note the change and the date in `model.json`.
+The level "typical for 2026" is defined by written anchors, not by a dataset of scored profiles, and the shares of the nine steps are the bell curve's, not counted. Keep each run's scores JSON. After about 30 real runs, compare the median level per criterion with 1 and the share of runs in each step with the table above, rewrite the anchors that sit far from it; note the change and the date in `model.json`.

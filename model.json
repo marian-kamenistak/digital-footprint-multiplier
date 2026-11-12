@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-11-12",
   "note": "Level 1 (typical for 2026) is defined by the written anchors below, not by a dataset of scored profiles. Recalibrate after the first 30 runs (see SKILL.md, Calibration).",
   "scale": {"missing": 0.4, "typical": 1.0, "strong": 1.7},
@@ -11,11 +11,15 @@
     "2": "strong"
   },
   "bands": [
-    {"below": 0.7, "name": "Hidden gem", "line": "The work is there. The internet has not seen it yet."},
-    {"below": 0.95, "name": "Warming up", "line": "The outline is visible. A few evenings make it sharp."},
-    {"below": 1.15, "name": "On the radar", "line": "You look like a solid hire. Now give people a reason to remember you."},
-    {"below": 1.4, "name": "Hard to ignore", "line": "Anyone who looks you up finds proof. Keep it fresh."},
-    {"below": 9.9, "name": "Magnet", "line": "The roles come to you. Your job is to choose."}
+    {"step": 1, "below": 0.48, "share": 4, "name": "Hidden gem", "line": "The work is there. The internet has not met it yet."},
+    {"step": 2, "below": 0.63, "share": 7, "name": "First sparks", "line": "A few signs are out. One evening adds the next ones."},
+    {"step": 3, "below": 0.78, "share": 12, "name": "Warming up", "line": "The outline is visible. A few evenings make it sharp."},
+    {"step": 4, "below": 0.93, "share": 17, "name": "Nearly there", "line": "One or two fixes from a typical profile."},
+    {"step": 5, "below": 1.09, "share": 20, "name": "On the radar", "line": "A typical 2026 profile: complete, honest, easy to forget. Give people one reason to remember you."},
+    {"step": 6, "below": 1.27, "share": 17, "name": "Worth a second look", "line": "A recruiter stops scrolling. Give them one more proof."},
+    {"step": 7, "below": 1.44, "share": 12, "name": "Hard to ignore", "line": "Anyone who looks you up finds proof. Keep it fresh."},
+    {"step": 8, "below": 1.62, "share": 7, "name": "In demand", "line": "People bring your name up when a role opens."},
+    {"step": 9, "below": 9.9, "share": 4, "name": "Magnet", "line": "The roles come to you. Your job is to choose."}
   ],
   "profiles": {
     "developer": {

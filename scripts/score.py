@@ -31,8 +31,10 @@ def multiplier(avg):
 
 
 def band(m):
+    """Nine steps cut from a bell curve; the step follows the multiplier as displayed (two decimals)."""
+    shown = round(m + 1e-9, 2)
     for b in MODEL["bands"]:
-        if m < b["below"]:
+        if shown < b["below"]:
             return b
 
 
@@ -79,7 +81,7 @@ def report(profile, data):
     m = score(profile, levels)
     b = band(m)
     out = ["%s · %s profile · %s" % (data.get("name", "?"), MODEL["profiles"][profile]["name"], data.get("date", "")),
-           "MULTIPLIER %.2fx · %s. %s" % (m, b["name"], b["line"]), "",
+           "MULTIPLIER %.2fx · %s (step %d of 9). %s" % (m, b["name"], b["step"], b["line"]), "",
            "| Criterion | Weight | Level | Next anchor is worth |", "|---|---|---|---|"]
     gains = []
     for c in crit:
@@ -134,7 +136,8 @@ def selftest():
             report(p, bad); raise SystemExit("evidence rule not enforced")
         except AssertionError:
             pass
-    assert band(0.5)["name"] == "Hidden gem" and band(1.0)["name"] == "On the radar" and band(1.7)["name"] == "Magnet"
+    assert [band(x)["step"] for x in (0.4, 0.47, 0.48, 0.7, 0.92, 1.0, 1.08, 1.09, 1.27, 1.47, 1.61, 1.62, 1.7)] == [1, 1, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9, 9]
+    assert sum(b["share"] for b in MODEL["bands"]) == 100 and band(1.0)["name"] == "On the radar"
     print("selftest ok: %s" % ", ".join(MODEL["profiles"]))
 
 

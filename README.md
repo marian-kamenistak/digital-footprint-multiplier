@@ -9,11 +9,30 @@ People come to me after sending hundreds of CVs with nothing coming back. Most o
 ## What you get
 
 - **A multiplier from 0.4 to 1.7.** 1.0 is a typical 2026 profile: complete, honest, forgettable. 0.4 is a profile the internet has not met yet. 1.7 brings the roles to you.
+- **A name for the number.** Nine steps from "Hidden gem" to "Magnet", so you know where you stand and what the next step up is called.
 - **The evidence behind every criterion.** A quoted line or a link. No evidence, no points.
 - **A plan sorted by time.** This week (under two hours each), this month, this quarter, and a checklist for the week before you apply for a promotion or a new job. Each step shows what it is worth.
 - **Two profiles:** software developer and engineering manager.
 
 The number measures how visible your proof is. It says nothing about how good you are at the job, and it is not a salary.
+
+## Your number has a name
+
+![Bell chart of the nine named steps of the multiplier: Hidden gem, First sparks, Warming up, Nearly there, On the radar, Worth a second look, Hard to ignore, In demand, Magnet. Step 5, On the radar, sits on 1.0. Bar heights are the share of profiles each step holds by design: 4, 7, 12, 17, 20, 17, 12, 7 and 4 percent.](assets/nine-steps.png)
+
+| Step | Multiplier | Name | Share by design |
+|---|---|---|---|
+| 1 | 0.40 to 0.47 | Hidden gem | 4% |
+| 2 | 0.48 to 0.62 | First sparks | 7% |
+| 3 | 0.63 to 0.77 | Warming up | 12% |
+| 4 | 0.78 to 0.92 | Nearly there | 17% |
+| 5 | 0.93 to 1.08 | On the radar | 20% |
+| 6 | 1.09 to 1.26 | Worth a second look | 17% |
+| 7 | 1.27 to 1.43 | Hard to ignore | 12% |
+| 8 | 1.44 to 1.61 | In demand | 7% |
+| 9 | 1.62 to 1.70 | Magnet | 4% |
+
+The nine steps are cut from a bell curve, the way a stanine scale is: step 5 sits on 1.0 and each step is half a standard deviation wide. The shares are the design of the scale, not measured data.
 
 ## Install
 
@@ -58,7 +77,7 @@ Each criterion gets a level from "not visible yet" to "strong", judged against w
 
 ## Where it comes from
 
-The criteria and weights are distilled from 3,662 1:1 leadership sessions with 317 engineering leaders since 2019. Version 1.0 defines "typical" by written anchors, not by a dataset of scored profiles; the anchors get recalibrated as real runs come in.
+The criteria and weights are distilled from 3,662 1:1 leadership sessions with 317 engineering leaders since 2019. "Typical" is defined by written anchors, not by a dataset of scored profiles; the anchors and the step shares get recalibrated as real runs come in. Version 1.1 (12 Nov 2026) added the nine named steps.
 
 It is the outside view to pair with the [Market Value Calculator](https://www.marian.coach/market-value-calculator/): the calculator asks you twelve questions, this skill asks the internet. Where your own score is higher than your footprint, the work is real and not visible yet.
 
