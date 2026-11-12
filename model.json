@@ -43,7 +43,7 @@
            "month": ["Rewrite the last two roles as three result lines each. Check each number with a colleague first."],
            "quarter": ["Keep a small log of results at work, one line a week, so the next update takes ten minutes."]}},
         {"id": "proof_of_work", "name": "Proof of work", "weight": 16,
-         "reads": "GitHub or GitLab (pinned repos, README quality, stars, recent commits), package registries, live products, demos, LinkedIn Featured",
+         "reads": "GitHub or GitLab (pinned repos, README quality, stars, recent commits), package registries, live products, demos, LinkedIn Featured, published papers and patents",
          "levels": {
            "0": "No public code, product or demo that can be opened.",
            "1": "A GitHub profile with some repositories, mostly forks, course work or old projects; or one link to a product they worked on.",
@@ -63,7 +63,7 @@
            "month": ["Publish one reusable skill, prompt set or small agent on GitHub, with a README."],
            "quarter": ["Show one result at work that AI made possible, with the number, in your experience section."]}},
         {"id": "voice", "name": "Your voice", "weight": 10,
-         "reads": "LinkedIn activity of the last 12 months, blog, talks, podcasts, meetup and conference pages, YouTube",
+         "reads": "LinkedIn activity of the last 12 months and how often they post, blog, talks, podcasts, meetup and conference pages, YouTube",
          "levels": {
            "0": "No posts, articles or talks of their own in the last 12 months. Reposts do not count.",
            "1": "A few posts or one article or one meetup talk in the last 12 months.",
@@ -103,7 +103,7 @@
            "month": ["Ask a friend who hires to screen your profile for 60 seconds and tell you what they remembered."],
            "quarter": []}},
         {"id": "recency", "name": "Fresh and consistent", "weight": 6,
-         "reads": "Last activity on LinkedIn and GitHub, whether all profiles tell the same story",
+         "reads": "Last activity on LinkedIn, GitHub and their own site; whether numbers, titles and dates agree across all of them (digital ambiguities)",
          "levels": {
            "0": "No visible activity for a year, or profiles that contradict each other.",
            "1": "Some activity in the last six months.",
@@ -169,7 +169,7 @@
            "month": ["Write up one workflow your team now runs with agents, with the number it moved."],
            "quarter": ["Give that story as a ten-minute talk at a meetup."]}},
         {"id": "voice", "name": "Your voice", "weight": 10,
-         "reads": "LinkedIn activity of the last 12 months, blog, talks, podcasts, panels",
+         "reads": "LinkedIn activity of the last 12 months and how often they post, blog, talks, podcasts, panels",
          "levels": {
            "0": "No original posts or talks in the last 12 months.",
            "1": "A few posts or one talk or panel in the last 12 months.",
@@ -199,7 +199,7 @@
            "month": ["Ask a recruiter you trust what they remembered after 60 seconds."],
            "quarter": []}},
         {"id": "tech_credibility", "name": "Technical credibility", "weight": 4,
-         "reads": "Architecture decisions described, past hands-on work, technical writing or talks",
+         "reads": "Architecture decisions described, past hands-on work, technical writing or talks, published papers and patents",
          "levels": {
            "0": "No sign of technical depth.",
            "1": "A hands-on past is visible in earlier roles.",
@@ -209,7 +209,7 @@
            "month": ["Write up one technical decision you made and what you traded away."],
            "quarter": []}},
         {"id": "recency", "name": "Fresh and consistent", "weight": 4,
-         "reads": "Last activity, whether all profiles tell the same story",
+         "reads": "Last activity on LinkedIn and their own site; whether numbers, titles and dates agree across all of them (digital ambiguities)",
          "levels": {
            "0": "No visible activity for a year, or profiles that contradict each other.",
            "1": "Some activity in the last six months.",

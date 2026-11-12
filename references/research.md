@@ -15,7 +15,7 @@ A name is not a person. Accept a page as theirs only with two matching signals: 
 | Featured, Contact info | every outgoing link | proof of work, voice |
 | Skills | the top ten, and whether they match the roles | readability |
 | Recommendations | who wrote each one (manager, report, peer), the date, the first sentence | third-party or people proof |
-| Activity, last 12 months | their own posts: count, topics, who answers | voice, AI fluency, recency |
+| Activity, last 12 months | their own posts: how many and how often (posts a month), topics, who answers | voice, AI fluency, recency |
 | Followers, connections ("500+") | the numbers | network |
 
 ## 3. The open web
@@ -29,6 +29,8 @@ Search the full name in quotes with one qualifier at a time: employer, city, `gi
 | AI in their work | a published skill, agent, MCP server or prompt set; posts that describe a task given to an agent | AI fluency, AI leadership |
 | Voice | YouTube and conference pages, Sessionize, meetup pages, podcast episodes, their blog, Medium, dev.to, Substack | voice |
 | Other people | mentions in posts and articles, awards, thanks in release notes, co-authored work | third-party proof |
+| Research and inventions | scientific papers (Google Scholar, arXiv, ResearchGate, DBLP) and patents (Google Patents, Espacenet) under their name; count them only with the identity check passed | proof of work, third-party proof, technical credibility |
+| Their own site | a personal web page or blog: what it says they do, how fresh it is, whether it agrees with LinkedIn | headline, voice, fresh and consistent |
 | Community | meetup organiser pages, open-source maintainer lists, community member pages | network |
 | For managers | hiring posts, team pages, talks about how they run teams, press about the organisation | scope, outcomes, people proof |
 
