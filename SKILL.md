@@ -62,6 +62,9 @@ Paid research tools the user has connected (Firecrawl, DataForSEO, Exa and simil
 1. Take the criteria of the role profile from `model.json`.
 2. For each criterion choose a level: 0, 0.5, 1, 1.5 or 2, by comparing the evidence with the written anchors for 0, 1 and 2.
 3. A level above 0 needs evidence: a quoted line or a URL. Level 0 needs the list of places you looked. "Probably has" is level 0.
+   - Half levels sit between two anchors: 0.5 when part of the level 1 anchor is visible, 1.5 when level 1 is fully met and part of level 2 is visible. Say which part is still missing; that sentence is the person's next step.
+   - A public appearance is a talk, a panel, a podcast or a long article under their name. Mentoring at an event, attending, and reposts are not appearances; mention them under network signals instead.
+   - When the newest role has no description, judge outcomes on the most recent roles that do, and count the empty one under "Easy to screen".
 4. If a criterion truly cannot be observed (an employer that forbids public code, a profile in a language you cannot read), set it to `null` with the reason. The script drops it and scales the other weights back to 100. At most two.
 5. Write the scores to a JSON file and run the script. Never do the arithmetic in your head.
 
